@@ -1,0 +1,9 @@
+<%=@current_loc%>
+
+<%@temps.each do |temp|%>
+  <h1>Date: <%=temp["date"]%></h1>
+  <h2>Day of the week:<%=temp["day"]%></h2>
+  <h3>High Temp:<%=temp["high"]%></h3>
+  <h3>Low Temp:<%=temp["low"]%></h3>
+  <h3>Conditions:<%=temp["text"]%></h3>
+<%end%>
